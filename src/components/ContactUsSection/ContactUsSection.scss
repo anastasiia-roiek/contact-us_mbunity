@@ -1,0 +1,45 @@
+@import '../../sassStyles/mixins';
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 15px;
+
+  @include onDesktop {
+    padding: 50px 122px;
+  }
+
+  &__heading {
+
+    margin-bottom: 10px;
+
+    @include onDesktop {
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 60px;
+      letter-spacing: 0em;
+    }
+  }
+
+  &__text {
+
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 21px;
+    color: #717171;
+    margin-bottom: 20px;
+    padding: 0 40px;
+
+    @include onDesktop {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 27px;
+
+      margin-bottom: 50px;
+    }
+  }
+}

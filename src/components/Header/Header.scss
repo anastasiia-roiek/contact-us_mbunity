@@ -1,3 +1,5 @@
+@import './../../sassStyles/mixins';
+
 .header {
 
   &__logo {
@@ -23,5 +25,86 @@
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__icon__link {
+    &--profile {
+      transition: background-image 0.3s ease-in-out;
+
+      width: 16px;
+      height: 19px;
+      background-image: url(../../static/profileBlack.svg);
+    }
+
+    &--cart {
+      transition: background-image 0.3s ease-in-out;
+
+      width: 16px;
+      height: 16px;
+      background-image: url(../../static/cartBlack.svg);
+    }
+
+    &__container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 32px;
+      width: 32px;
+      
+      border: solid 1px #000;
+      border-radius: 50%;
+
+      transition: background-color 0.3s ease-in-out;
+
+      &:hover {
+        background-color: #000;
+      }
+
+      &:hover .header__icon__link--profile {
+        background-image: url(../../static/profile.svg);
+      }
+      &:hover .header__icon__link--cart {
+        background-image: url(../../static/cart.svg);
+      }
+    }
+  }
+
+  &__icon__links__container {
+    display: flex;
+    gap: 36px;
+  }
+
+  &__link {
+    display: inline-block;
+    color: #000;
+
+    transition: border-bottom 0.3s ease-in-out;
+
+    &:hover {
+      border-bottom: 1px solid #000;
+    }
+  }
+
+  &__nav {
+    display: none;
+
+    @include onDesktop {
+      display: flex;
+      gap: 60px;
+    }
+
+    &-ul {
+      @include onDesktop {
+        display: flex;
+        gap: 47px;
+        align-items: center;
+      }
+    }
+
   }
 }

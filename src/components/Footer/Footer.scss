@@ -5,9 +5,9 @@
   flex-direction: column;
   gap: 30px;
 
-  position: fixed;
-  bottom: 0;
-  width: 100%;
+  // position: fixed;
+  // bottom: 0;
+  // width: 100%;
 
   padding: 20px 20px 35px 20px;
 
@@ -26,8 +26,6 @@
 
   &__icon {
     display: inline-block;
-    height: 19px;
-    width: 19px;
 
     transition: transform 0.3s ease-in-out;
 
@@ -36,7 +34,11 @@
     }
 
     &-phone {
+      height: 24px;
+      width: 24px;
       background-image: url(../../static/phone.svg);
+      background-position: center;
+      background-repeat: no-repeat;
     }
 
     &-mail {
@@ -186,7 +188,6 @@
     font-weight: 500;
     font-size: 13px;
     line-height: 18px;
-    color: #FFFFFF;
-    opacity: 0.5;
+    color: #9f9f9f;
   }
 }
