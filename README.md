@@ -3,11 +3,11 @@
 ## How to start a project
 Clone the repository using the command: git clone https://github.com/anastasiia-roiek/contact-us_mbunity.git
 
-Go to the project directory using the command: cd contact-us_mbunity
+Go to the project directory using the command: ```cd contact-us_mbunity```
 
-Install the dependencies using the command: npm install.
+Install the dependencies using the command: ```npm install```
 
-Start the project with the command: npm start.
+Start the project with the command: ```npm start```
 
 The project will be available at: http://localhost:3000.
 
@@ -21,8 +21,3 @@ The project uses the following technologies:
  - CSS
  - JavaScript
  - Figma
-
-
-
-
-Regenerate response
